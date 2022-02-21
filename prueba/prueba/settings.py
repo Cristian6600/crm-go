@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +24,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'django-insecure-qzuwm9s&ps#ha89fhb$3$ia_%j9mtjx(inpr_za@0bm86ct+qi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['periodicos.herokuapp.com', '127.0.0.1']
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'prueba.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR , 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
