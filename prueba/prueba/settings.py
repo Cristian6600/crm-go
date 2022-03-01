@@ -26,9 +26,9 @@ BASE_DIR = os.path.dirname(PROJECT_ROOT)
 SECRET_KEY = 'django-insecure-qzuwm9s&ps#ha89fhb$3$ia_%j9mtjx(inpr_za@0bm86ct+qi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['periodicos.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
