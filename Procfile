@@ -1,1 +1,1 @@
-web gunicorn crm-go.wsgi --log-file -
+web gunicorn prueba.wsgi --log-file -
